@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html>
+<head lang="vi">
+    <title>Vua bán hàng</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/customize.css"/>
+    <link type="text/css" rel="stylesheet" href="css/jquery.bxslider.css"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="css/responsive.css"/>
+    <script type='text/javascript' src="js/jquery.js"></script>
+    <script type='text/javascript' src="js/bootstrap.min.js"></script>
+    <script type='text/javascript' src="js/jquery.bxslider.min.js"></script>
+    <script type='text/javascript' src="js/style.js"></script>
+</head>
+<body>
+<header id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2 pull-left">
+                <div class="row">
+                    <div id="logo">
+                        <a href="#"><img id="logo-images" src="images/icons/logo.png" alt="..." title="..."></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 pull-right">
+                <div class="row">
+                    <div id="login">
+                        <span class="title-login"><a href="#">Đăng ký</a> | <a href="#">Đăng nhập</a></span><br>
+                        <span class="meta-login">Tài khoản & Đơn hàng</span>
+                    </div>
+                    <!--End Login-->
+
+                    <div id="shopping-cart">
+                        <a class="title-login buy-now" href="#" data-toggle="modal" data-target="#myCart">Giỏ hàng</a>
+            	        <a href="#" data-toggle="modal" data-target="#myCart"></span>&emsp;<span class="number-cart">9</span><br></a>
+                        <span class="meta-login">Sản phẩm</span>
+                    </div>
+                    <!--End Shopping Cart-->
+
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <div class="row">
+                    <div id="search-box">
+                        <form id="search-form" action="" method="POST">
+                            <div id="search-input">
+                                <div id="icon-search"></div>
+                                <input type="text" name="keysearch" id="keysearch" class="key-search"
+                                       placeholder="Nhập từ khóa tìm kiếm..." value>
+
+                                <div id="group-search">
+                                    <div class="title-group" id="title-group">Tất cả danh mục</div>
+                                    <ul id="list-group">
+                                        <li>Tất cả danh mục</li>
+                                        <li>
+                                            <input type="hidden" value="1" name="cat">
+                                            Đồ dùng, đồ chơi trẻ...
+                                        </li>
+                                        <li>
+                                            <input type="hidden" value="55" name="cat">
+                                            Điện máy, máy văn phòng
+                                        </li>
+                                        <li>
+                                            <input type="hidden" value="56" name="cat">
+                                            Đồ dùng gia đình
+                                        </li>
+                                        <li>
+                                            <input type="hidden" value="91" name="cat">
+                                            Thời trang, Sắc đẹp, Sức...
+                                        </li>
+                                        <li>
+                                            <input type="hidden" value="204" name="cat">
+                                            Thể thao, du lịch, nghe...
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button type="submit" class="search-button">Tìm kiếm</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!--End Search Box-->
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+<section id="section">
+<div id="top">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="row">
+                <nav id="main-menu">
+                <div id="title-menu">
+                    Danh mục sản phẩm
+                </div>
+                <ul id="main-menu-content">
+                <li class="menu-item menu-item-1">
+                    <div class="menu-icon-category">
+                        <a href="#"> <img src="images/icons/menu-icon-category-4.png">
+                        </a>
+                    </div>
+                    <strong>
+                        <a href="#">Điện máy, máy văn phòng</a> </strong>
+
+                    <div class="guide">
+                        <a href="#">Máy in</a>,<a href="#"> Đầu
+                        đọc mã vạch</a>,
+                    </div>
+                    <div class="sub-cate">
+                        <div class="level-1">
+                            <ul>
+                                <li><a href="#">Màn chiếu</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Màn chiếu chân</a></li>
+                                            <li><a href="#">Màn chiếu di động</a></li>
+                                            <li><a href="#">Màn chiếu treo tường</a></li>
+                                            <li><a href="#">Màn chiếu treo tường tự cuốn lên</a>
+                                            </li>
+                                            <li><a href="#">Màn chiếu điện có điều khiển</a></li>
+                                            <li><a href="#">Màn chiếu điện 3D có điều khiển</a></li>
+                                            <li><a href="#">Màn chiếu để sàn</a></li>
+                                            <li><a href="#">Màn chiếu khung trước sau</a></li>
+                                            <li><a href="#">Phụ kiện màn chiếu</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Máy chiếu</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Máy chiếu Hitachi</a></li>
+                                            <li><a href="#">Máy chiếu Optoma</a></li>
+                                            <li><a href="#">Máy chiếu Sony</a></li>
+                                            <li><a href="#">Máy chiếu VIEWSONIC</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Máy in văn phòng</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Máy in phun màu</a></li>
+                                            <li><a href="#">Máy in ảnh Canon</a></li>
+                                            <li><a href="#">Máy in Brother</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Thiết bị mã số mã vạch</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Đầu đọc mã vạch</a></li>
+                                            <li><a href="#">Máy in hóa đơn</a></li>
+                                            <li><a href="#">Máy in mã vạch</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Thiết bị mạng</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Bộ phát wifi</a></li>
+                                            <li><a href="#">Bộ thu wifi</a></li>
+                                            <li><a href="#">Cổng chia mạng (Switch)</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">TV, Video & Âm thanh</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Đầu thu kỹ thuật số</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Máy hút ẩm</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Edison</a></li>
+                                            <li><a href="#">Harison</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Máy cắt</a>
+                                </li>
+                                <li><a href="#">Máy Photocopy</a>
+                                </li>
+                                <li><a href="#">Máy fax</a>
+                                </li>
+                                <li><a href="#">Máy đánh giầy</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="hot-product">
+                            <div class="hot-product-item">
+                                <div class="image-product-item">
+                                    <a href="#"><img
+                                            src="images/data/bo-phat-wifi-khong-day.jpg"
+                                            alt="Bộ phát wifi không dây"></a>
+                                </div>
+                                <a href="#" class="name-product-item"><span>Bộ phát wifi không dây</span></a><br>
+                                <span class="price-product-item">549.000 VNĐ</span>
+                            </div>
+                            <!--End Hot Product Item-->
+                            <div class="hot-product-item">
+                                <div class="image-product-item">
+                                    <a href="#"><img
+                                            src="images/data/bo-thu-wi-fi.jpg" alt="Bộ thu wifi"></a>
+                                </div>
+                                <a href="#"
+                                   class="name-product-item"><span>Bộ thu wifi</span></a><br>
+                                <span class="price-product-item">550.000 VNĐ</span>
+                            </div>
+                            <!--End Hot Product Item-->
+                            <div class="hot-product-item">
+                                <div class="image-product-item">
+                                    <a href="#"><img
+                                            src="images/data/may-in-ma-vach.jpg" alt="Máy in mã vạch"></a>
+                                </div>
+                                <a href="#" class="name-product-item"><span>Máy in mã vạch</span></a><br>
+                                <span class="price-product-item">4.990.000 VNĐ</span>
+                            </div>
+                            <!--End Hot Product Item-->
+                        </div>
+                        <!--End Hot Product-->
+                        <div class="img-thumb-menu-item">
+                            <img src=images/data/device.png alt=Điện máy, máy văn phòng></div>
+                    </div>
+                </li>
+                <li class="menu-item menu-item-1">
+                    <div class="menu-icon-category">
+                        <a href="#"> <img src="images/icons/menu-icon-category-1.png">
+                        </a>
+                    </div>
+                    <strong>
+                        <a href="#">Đồ dùng gia đình</a> </strong>
+
+                    <div class="guide">
+                        <a href="#">Nhà bếp</a>,<a href="#"> Đồ
+                        gia dụng</a>,
+                    </div>
+                    <div class="sub-cate">
+                        <div class="level-1">
+                            <ul>
+                                <li><a href="#">Đồ dùng nhà bếp</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Máy trồng rau mầm, hạt rau mầm</a></li>
+                                            <li><a href="#">Máy xay và ép trái cây</a></li>
+                                            <li><a href="#">Máy đánh trứng</a></li>
+                                            <li><a href="#">Máy làm sữa Đậu Nành</a></li>
+                                            <li><a href="#">Máy đo thực phẩm an toàn</a></li>
+                                            <li><a href="#">Cân thực phẩm</a></li>
+                                            <li><a href="#">Máy làm và nướng Bánh Mì</a></li>
+                                            <li><a href="#">Nắp và hộp bảo quản chân không</a></li>
+                                            <li><a href="#">Xoong, nồi, chảo</a></li>
+                                            <li><a href="#">Máy hủy rác</a></li>
+                                            <li><a href="#">Máy làm kem gia đình</a></li>
+                                            <li><a href="#">Máy làm sữa chua</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Đồ dùng gia dụng</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Đèn sưởi nhà tắm</a></li>
+                                            <li><a href="#">Bếp từ, bếp hồng ngoại</a></li>
+                                            <li><a href="#">Máy sưởi, quạt sưởi</a></li>
+                                            <li><a href="#">Bình đun siêu tốc</a></li>
+                                            <li><a href="#">Bình giữ nhiệt</a></li>
+                                            <li><a href="#">Lò vi sóng - lò nướng - vỉ nướng</a></li>
+                                            <li><a href="#">Nồi áp suất - nồi lẩu</a></li>
+                                            <li><a href="#">Máy sấy quần áo</a></li>
+                                            <li><a href="#">Chổi lau nhà</a></li>
+                                            <li><a href="#">Máy hút bụi</a></li>
+                                            <li><a href="#">Quạt điện</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Đèn pin siêu sáng</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Đèn pin LED</a></li>
+                                            <li><a href="#">Phụ kiện đèn pin</a></li>
+                                            <li><a href="#">Đèn pin xe đạp</a></li>
+                                            <li><a href="#">Đèn pin chiếu sáng khủng</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Các thương hiệu hàng đầu</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Panasonic</a></li>
+                                            <li><a href="#">Nano Việt Nam</a></li>
+                                            <li><a href="#">Truyền hình an viên</a></li>
+                                            <li><a href="#">VTC</a></li>
+                                            <li><a href="#">Tập đoàn Kangaroo</a></li>
+                                            <li><a href="#">Tập đoàn Midea</a></li>
+                                            <li><a href="#">Medisana - Đức</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Nội thất</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Đồ phong thủy</a></li>
+                                            <li><a href="#">Bàn trà</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Máy khử độc thực phẩm</a>
+                                </li>
+                                <li><a href="#">Chăn, Chườm nóng lạnh</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Túi chườm đa năng</a></li>
+                                            <li><a href="#">Chăn điện</a></li>
+                                            <li><a href="#">Tấm chườm nóng</a></li>
+                                            <li><a href="#">Đệm bốn mùa</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Máy lọc nước</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Máy lọc nước nano</a></li>
+                                            <li><a href="#">Máy lọc nước RO</a></li>
+                                            <li><a href="#">Máy lọc nước nóng lạnh</a></li>
+                                            <li><a href="#">Cây nước nóng lạnh</a></li>
+                                            <li><a href="#">Lọc nước sinh hoạt</a></li>
+                                            <li><a href="#">Phụ kiện máy lọc nước</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Thiết bị vệ sinh</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Bồn nước</a></li>
+                                            <li><a href="#">Bình nóng lạnh</a></li>
+                                            <li><a href="#">Năng lượng mặt trời</a></li>
+                                            <li><a href="#">Chậu rửa bát</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="hot-product">
+                            <div class="hot-product-item">
+                                <div class="image-product-item">
+                                    <a href="#"><img
+                                            src="images/data/BlueStone-VCB8035-3.jpg"
+                                            alt="Máy hút bụi BlueStone VCB 8035"></a>
+                                </div>
+                                <a href="#" class="name-product-item"><span>Máy hút bụi BlueStone VCB 8035</span></a><br>
+                                <span class="price-product-item">1.399.000 VNĐ</span>
+                            </div>
+                            <!--End Hot Product Item-->
+                            <div class="hot-product-item">
+                                <div class="image-product-item">
+                                    <a href="#"><img
+                                            src="images/data/May-danh-trung-bluestone-hmb-6333-.jpg"
+                                            alt="Máy đánh trứng BlueStone"></a>
+                                </div>
+                                <a href="#" class="name-product-item"><span>Máy đánh trứng BlueStone</span></a><br>
+                                <span class="price-product-item">1.015.000 VNĐ</span>
+                            </div>
+                            <!--End Hot Product Item-->
+                            <div class="hot-product-item">
+                                <div class="image-product-item">
+                                    <a href="#"><img
+                                            src="images/data/Noi-hap-dien-da-nang-3-tang-Braburg.jpg"
+                                            alt="Nồi hấp đa năng"></a>
+                                </div>
+                                <a href="#"
+                                   class="name-product-item"><span>Nồi hấp đa năng</span></a><br>
+                                <span class="price-product-item">699.000 VNĐ</span>
+                            </div>
+                            <!--End Hot Product Item-->
+                        </div>
+                        <!--End Hot Product-->
+                        <div class="img-thumb-menu-item">
+                            <img src=images/data/appliances.png alt="..."></div>
+                    </div>
+                </li>
+                <li class="menu-item menu-item-1">
+                    <div class="menu-icon-category">
+                        <a href=""> <img src="images/icons/menu-icon-category-5.png">
+                        </a>
+                    </div>
+                    <strong>
+                        <a href="">Đồ dùng, đồ chơi trẻ em</a> </strong>
+
+                    <div class="guide">
+                        <a href="#">Đồ chơi trí tuệ</a>,<a
+                            href="#">SGK điện tử</a>,
+                    </div>
+                    <div class="sub-cate">
+                        <div class="level-1">
+                            <ul>
+                                <li><a href="#">Xe mô hình</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Xe mô hình ford</a></li>
+                                            <li><a href="#">xe mô hình Nissan</a></li>
+                                            <li><a href="#">Xe mô hình Buick Century</a></li>
+                                            <li><a href="#">xe mô hình Lamborghini</a></li>
+                                            <li><a href="#">Xe mô hình ASTON MARTIN</a></li>
+                                            <li><a href="#">Xe mô hình PAGANI</a></li>
+                                            <li><a href="#">Xe mô hình MAYBACH</a></li>
+                                            <li><a href="#">Xe mô hình MERCEDES-BENZ</a></li>
+                                            <li><a href="#">Xe mô hình LOTUS</a></li>
+                                            <li><a href="#">Xe mô hình BUGATTI</a></li>
+                                            <li><a href="#">Xe mô hình McLaren</a></li>
+                                            <li><a href="#">Xe mô hình TOYOTA</a></li>
+                                            <li><a href="#">Xe mô tô</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Bể bơi, đồ bơi phao</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Intex</a></li>
+                                            <li><a href="#">Swimming Pool</a></li>
+                                            <li><a href="#">Phụ kiện bể bơi</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Giày trượt patin, ván trượt</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Giày Patin Couger</a></li>
+                                            <li><a href="#">Phụ kiện patin</a></li>
+                                            <li><a href="#">Ván trượt - SKATEBOARD</a></li>
+                                            <li><a href="#">Giày Patin Seba</a></li>
+                                            <li><a href="#">Giày Patin Fly Eagle</a></li>
+                                            <li><a href="#">Giày Patin Powerslide</a></li>
+                                            <li><a href="#">Giày patin thương hiệu khác</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Đồ chơi cao cấp</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Máy bay điều khiển</a></li>
+                                            <li><a href="#">Bộ xây dựng</a></li>
+                                            <li><a href="#">Bộ lắp ráp, lắp ghép</a></li>
+                                            <li><a href="#">Đồ chơi hình khối</a></li>
+                                            <li><a href="#">Xe mô hình</a></li>
+                                            <li><a href="#">Đồ chơi Tosy</a></li>
+                                            <li><a href="#">Đồ chơi mô hình</a></li>
+                                            <li><a href="#">Xe điều khiển từ xa</a></li>
+                                            <li><a href="#">Đồ chơi tạo âm thanh</a></li>
+                                            <li><a href="#">Học chữ, số</a></li>
+                                            <li><a href="#">Đồ chơi lắp ghép Huna</a></li>
+                                            <li><a href="#">Đồ chơi LEGO</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Địu&Đai trẻ em</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Địu trẻ em</a></li>
+                                            <li><a href="#">Đai an toàn trẻ em</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Sản phẩm giáo dục</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Bút chấm đọc</a></li>
+                                            <li><a href="#">Máy học Tiếng Anh</a></li>
+                                            <li><a href="#">Sách chấm đọc</a></li>
+                                            <li><a href="#">Sách điện tử, Ipad học sinh</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Bình sữa, núm ti và thiết bị tiệt trùng</a>
+                                </li>
+                                <li><a href="#">Thanh, rào chắn, nôi, cũi</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Nôi cũi</a></li>
+                                            <li><a href="#">Thanh, rào chắn an toàn</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Thảm chơi cho bé</a>
+                                </li>
+                                <li><a href="#">Chăn, ga & gối trẻ sơ sinh</a>
+                                </li>
+                                <li><a href="#">Xe đạp, xe đẩy, xe điện</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Xe đạp trẻ em</a></li>
+                                            <li><a href="#">Xe tập đi, xe đẩy</a></li>
+                                            <li><a href="#">Xe điện trẻ em</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="hot-product">
+                            <div class="hot-product-item">
+                                <div class="image-product-item">
+                                    <a href="#"><img
+                                            src="images/data/discorobo(1).jpg" alt="Discorobo kèm loa "></a>
+                                </div>
+                                <a href="#"
+                                   class="name-product-item"><span>Discorobo kèm loa </span></a><br>
+                                <span class="price-product-item">1.398.000 VNĐ</span>
+                            </div>
+                            <!--End Hot Product Item-->
+                            <div class="hot-product-item">
+                                <div class="image-product-item">
+                                    <a href="#"><img
+                                            src="images/data/my-robot-time.jpg" alt="Huna Fun & Bot 1 Story"></a>
+                                </div>
+                                <a href="#" class="name-product-item"><span>Huna Fun & Bot 1 Story</span></a><br>
+                                <span class="price-product-item">690.000 VNĐ</span>
+                            </div>
+                            <!--End Hot Product Item-->
+                            <div class="hot-product-item">
+                                <div class="image-product-item">
+                                    <a href="#"><img src="images/data/dia-bay-tosy.jpg"
+                                                     alt="Đĩa bay tosy"></a>
+                                </div>
+                                <a href="#" class="name-product-item"><span>Đĩa bay tosy</span></a><br>
+                                <span class="price-product-item">129.000 VNĐ</span>
+                            </div>
+                            <!--End Hot Product Item-->
+                        </div>
+                        <!--End Hot Product-->
+                        <div class="img-thumb-menu-item">
+                            <img src=images/data/baby.png alt="Đồ dùng đồ chơi trẻ em"></div>
+                    </div>
+                </li>
+                <li class="menu-item menu-item-1">
+                    <div class="menu-icon-category">
+                        <a href="#"> <img src="images/icons/menu-icon-category-2.png">
+                        </a>
+                    </div>
+                    <strong>
+                        <a href="#">Thể thao, du lịch, nghe nhìn</a> </strong>
+
+                    <div class="guide">
+                        <a href="#">Máy chạy bộ</a>,<a href="#"> Xà
+                        đơn</a>,<a href="#"> Tai nghe</a>,
+                    </div>
+                    <div class="sub-cate">
+                        <div class="level-1">
+                            <ul>
+                                <li><a href="#">Máy chạy bộ</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Máy chạy bộ Động Lực</a></li>
+                                            <li><a href="#">Máy chạy bộ Life</a></li>
+                                            <li><a href="#">Máy chạy bộ OMA</a></li>
+                                            <li><a href="#">Máy chạy bộ Reebok</a></li>
+                                            <li><a href="#">Máy chạy bộ MOFIT</a></li>
+                                            <li><a href="#">Thương hiệu khác</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Dụng cụ thể lực</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">xà đơn</a></li>
+                                            <li><a href="#">Tạ tay đa năng</a></li>
+                                            <li><a href="#">Boxing</a></li>
+                                            <li><a href="#">Yoga</a></li>
+                                            <li><a href="#">Dụng cụ tập</a></li>
+                                            <li><a href="#">xà xếp</a></li>
+                                            <li><a href="#">xà kép</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Dụng cụ tập cơ bụng</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Ghế tập cơ bụng</a></li>
+                                            <li><a href="#">Máy tập cơ bụng</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Nghe nhìn</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Kính thiên văn</a></li>
+                                            <li><a href="#">Đồng hồ điện thoại</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Xe đạp các loại</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Xe đạp địa hình thời trang</a></li>
+                                            <li><a href="#">Xe đạp mini thời trang</a></li>
+                                            <li><a href="#">Xe đạp thông dụng</a></li>
+                                            <li><a href="#">Xe đạp điện</a></li>
+                                            <li><a href="#">xe đạp du lịch- đường phố</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Bóng bàn</a>
+                                </li>
+                                <li><a href="#">Du lịch</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Giường hơi</a></li>
+                                            <li><a href="#">Gậy chụp hình tự sướng</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Xe đạp thể lực</a>
+                                </li>
+                                <li><a href="#">Máy massage rung toàn thân</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Máy massage</a></li>
+                                            <li><a href="#">Bồn massage chân</a></li>
+                                            <li><a href="#">Ghế & Gối massage</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Giàn tập tạ</a>
+                                </li>
+                                <li><a href="#">Máy tăng chiều cao</a>
+                                </li>
+                                <li><a href="#">Tai nghe</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Tai nghe Beats</a></li>
+                                            <li><a href="#">Tai nghe Bluetooth</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="hot-product">
+                            <div class="hot-product-item">
+                                <div class="image-product-item">
+                                    <a href="#"><img
+                                            src="images/data/Xe-dap-truot-Kolvia.jpg"
+                                            alt="Xe đạp trượt Kolvia Wing A"></a>
+                                </div>
+                                <a href="#" class="name-product-item"><span>Xe đạp trượt Kolvia Wing A</span></a><br>
+                                <span class="price-product-item">1.850.000 VNĐ</span>
+                            </div>
+                            <!--End Hot Product Item-->
+                            <div class="hot-product-item">
+                                <div class="image-product-item">
+                                    <a href="#"><img
+                                            src="images/data/vicky-love.jpg"
+                                            alt="Xe đạp Totem Vicky Love trắng hồng"></a>
+                                </div>
+                                <a href="#" class="name-product-item"><span>Xe đạp Totem Vicky Love trắng hồng</span></a><br>
+                                <span class="price-product-item">1.900.000 VNĐ</span>
+                            </div>
+                            <!--End Hot Product Item-->
+                            <div class="hot-product-item">
+                                <div class="image-product-item">
+                                    <a href="#"><img
+                                            src="images/data/xa-don.jpg" alt="Xà đơn điều chỉnh treo tường 1-1.5m"></a>
+                                </div>
+                                <a href="#" class="name-product-item"><span>Xà đơn điều chỉnh treo tường 1-1.5m</span></a><br>
+                                <span class="price-product-item">435.000 VNĐ</span>
+                            </div>
+                            <!--End Hot Product Item-->
+                        </div>
+                        <!--End Hot Product-->
+                        <div class="img-thumb-menu-item">
+                            <img src=images/icons/menu-sport.png alt="Thể thao du lịch nghe nhìn"></div>
+                    </div>
+                </li>
+                <li class="menu-item menu-item-1">
+                    <div class="menu-icon-category">
+                        <a href="#"> <img src="images/icons/menu-icon-category-3.png">
+                        </a>
+                    </div>
+                    <strong>
+                        <a href="#">Thời trang, Sắc đẹp, Sức khỏe</a> </strong>
+
+                    <div class="guide">
+                        <a href="#">Thiết bị làm đẹp</a>,<a
+                            href="#"> Thiết bị y tế</a>,
+                    </div>
+                    <div class="sub-cate">
+                        <div class="level-1">
+                            <ul>
+                                <li><a href="#">Máy đo y tế</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Máy đo & que thử đường huyết</a></li>
+                                            <li><a href="#">Máy đo huyết áp</a></li>
+                                            <li><a href="#">Máy đo máu nhiễm mỡ</a></li>
+                                            <li><a href="#">Máy đo Acid Uric Gout</a></li>
+                                            <li><a href="#">Máy kiểm tra rụng trứng sớm</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Thiết bị y tế gia đình</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Thiết bị Tai mũi họng</a></li>
+                                            <li><a href="#">Cân Sức khỏe</a></li>
+                                            <li><a href="#">Nhiệt kế điện tử</a></li>
+                                            <li><a href="#">Đèn hồng ngoại</a></li>
+                                            <li><a href="#">Thiết bị Theo dõi & Trị liệu khác</a>
+                                            </li>
+                                            <li><a href="#">Đo nhiệt độ - Độ ẩm - Tạo ẩm</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Thiết bị làm đẹp</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Lều xông hơi</a></li>
+                                            <li><a href="#">Máy xông hơi mặt</a></li>
+                                            <li><a href="#">Đai massage bụng</a></li>
+                                            <li><a href="#">Máy giảm béo & chăm sóc da</a></li>
+                                            <li><a href="#">Máy sấy tóc</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Thực phẩm chức năng</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Đường huyết</a></li>
+                                            <li><a href="#">Chống thiếu máu</a></li>
+                                            <li><a href="#">Giảm béo</a></li>
+                                            <li><a href="#">Chăm sóc da</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Mỹ phẩm làm đẹp</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Trang điểm</a></li>
+                                            <li><a href="#">Dưỡng da</a></li>
+                                            <li><a href="#">Nước hoa</a></li>
+                                            <li><a href="#">Chăm sóc tóc</a></li>
+                                            <li><a href="#">Sữa tắm cao cấp</a></li>
+                                            <li><a href="#">Kem dưỡng da tay, móng tay</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Sản phẩm hỗ trợ tình dục</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Bao cao su</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">Đồng hồ thời trang</a>
+
+                                    <div class="level-2">
+                                        <ul>
+                                            <li><a href="#">Đồng hồ nam Armani</a></li>
+                                            <li><a href="#">Đồng hồ nữ Armani</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="hot-product">
+                            <div class="hot-product-item">
+                                <div class="image-product-item">
+                                    <a href="#"><img src="images/data/hut-mui.jpg"
+                                                     alt="Dụng cụ hút mũi Canpol 5/119"></a>
+                                </div>
+                                <a href="#"
+                                   class="name-product-item"><span>Dụng cụ hút mũi Canpol 5/119</span></a><br>
+                                <span class="price-product-item">260.000 VNĐ</span>
+                            </div>
+                            <!--End Hot Product Item-->
+                            <div class="hot-product-item">
+                                <div class="image-product-item">
+                                    <a href="#"><img
+                                            src="images/data/may-say-toc.jpg"
+                                            alt="Máy sấy tóc BlueStone HDB-1835V"></a>
+                                </div>
+                                <a href="#" class="name-product-item"><span>Máy sấy tóc BlueStone HDB-1835V</span></a><br>
+                                <span class="price-product-item">332.000 VNĐ</span>
+                            </div>
+                            <!--End Hot Product Item-->
+                            <div class="hot-product-item">
+                                <div class="image-product-item">
+                                    <a href="#"><img src="images/data/leu-xong-hoi.jpg"
+                                                     alt="Lều xông hơi BeauSpa01"></a>
+                                </div>
+                                <a href="#"
+                                   class="name-product-item"><span>Lều xông hơi BeauSpa01</span></a><br>
+                                <span class="price-product-item">2.500.000 VNĐ</span>
+                            </div>
+                            <!--End Hot Product Item-->
+                        </div>
+                        <!--End Hot Product-->
+                        <div class="img-thumb-menu-item">
+                            <img src=images/data/fashion.png alt="Thời trang sắc đẹp sức khỏe"></div>
+                    </div>
+                </li>
+                <div id="sale">
+                    <a href="#"><img src="images/icons/sale.jpg" alt=".." class="img-responsive"></a>
+                </div>
+                </ul>
+                </nav>
+                <!--End Main Menu-->
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <div class="row">
+                    <div id="policy">
+                        <div class="cskh item1">
+                            <span class="corner"></span>
+                            <a href="#">
+                                Đổi trả hàng trong 10 ngày
+                            </a>
+                        </div>
+
+                        <div class="cskh item2">
+                            <span class="corner"></span>
+                            <a href="#">
+                                Thanh toán khi nhận
+                            </a>
+                        </div>
+
+                        <div class="cskh item3">
+                            <span class="corner"></span>
+                            <a href="#">
+                                Miễn phí vận chuyển
+                            </a>
+                        </div>
+
+                    </div>
+                    <!--End Policy-->
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="row">
+                    <div id="hotline">
+                        <span>HOTLINE : <span class="orange">0932 221 285</span></span>
+                    </div>
+                    <!--End Hotline-->
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <div class="row">
+                    <!-- wSlider -->
+                    <div id="main-slide" class="wSlider">
+                    	<div class="slider_content">
+                    		<div class="item_wrapper">
+                    			<!-- Repeat 3 -->
+                    			<div class="item">
+                    				<a href="#"><img class="thumb" alt="" src="images/data/20-may-loc-nuoc.jpg"/></a>
+                    			</div>
+                    			<div class="item">
+                    				<img class="thumb" alt="" src="images/data/online-friday.jpg"/>
+                    			</div>
+                    			<div class="item">
+                    				<img class="thumb" alt="" src="images/data/may-hut-bui.jpg"/>
+                    			</div>
+                    			<!-- end of repeat 3 -->
+                    		</div>
+                    		<span class="next_btn"></span>
+                    		<span class="prev_btn"></span>
+                    	</div>
+                    </div>
+                    <!-- end of wSlider -->
+                    <script>
+                    $('.item_wrapper', $('#main-slide')).bxSlider({
+                            auto: true,
+                    		captions: false,
+                    		slideSelector: '.item',
+                    		minSlides: 5,
+                    		maxSlides: 5,
+                    		pager: false,
+                    		nextText: " ",
+                    		prevText: " ",
+                    		nextSelector: ".next_btn",
+                    		prevSelector: ".prev_btn"
+                    });
+                    </script>
+
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="row">
+                    <div id="right-advertise-slider">
+                        <div class="advertise-item">
+                            <a href="#"><img src="images/data/classbook.jpg"
+                                             alt="Quảng cáo"></a>
+                        </div>
+                        <!--End Advertise Item-->
+                        <div class="advertise-item">
+                            <a href="#"><img src="images/data/sale-slider-small-2.jpg"
+                                             alt="Quảng cáo"></a>
+                        </div>
+                        <!--End Advertise Item-->
+                        <div class="advertise-item">
+                            <a href="#"><img src="images/data/sale-slider-small-3.jpg"
+                                             alt="Quảng cáo"></a>
+                        </div>
+                        <!--End Advertise Item-->
+                    </div>
+                    <!--End Right Advertise Slider-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!--end #Top-->
+<div id="provider">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2 pull-left">
+                <div class="row">
+                    <div id="advertise-left">
+                        <a href="#"><img src="images/data/dia-bay-tosy(1).jpg" alt="Quảng cáo bên trái" class="img-responsive"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 pull-right">
+                <div class="row">
+                    <div id="advertise-right">
+                        <a href="#"><img src="images/data/dia-bay-tosy(1).jpg" alt="Quảng cáo bên trái" class="img-responsive"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div id="logo-provider">
+                        <a href="#"><img src="images/data/02.jpg" alt=".." class="img-responsive"></a>
+                        <a href="#"><img src="images/data/03.jpg" alt=".." class="img-responsive"></a>
+                        <a href="#"><img src="images/data/04.jpg" alt=".." class="img-responsive"></a>
+                        <a href="#"><img src="images/data/02.jpg" alt=".." class="img-responsive"></a>
+                        <a href="#"><img src="images/data/03.jpg" alt=".." class="img-responsive"></a>
+                        <a href="#"><img src="images/data/04.jpg" alt=".." class="img-responsive"></a>
+                        <a href="#"><img src="images/data/02.jpg" alt=".." class="img-responsive"></a>
+                        <a href="#"><img src="images/data/03.jpg" alt=".." class="img-responsive"></a>
+                        <a href="#"><img src="images/data/04.jpg" alt=".." class="img-responsive"></a>
+                        <a href="#"><img src="images/data/02.jpg" alt=".." class="img-responsive"></a>
+                        <a href="#"><img src="images/data/03.jpg" alt=".." class="img-responsive"></a>
+                        <a href="#"><img src="images/data/04.jpg" alt=".." class="img-responsive"></a>
+                        <a href="#"><img src="images/data/02.jpg" alt=".." class="img-responsive"></a>
+                        <a href="#"><img src="images/data/03.jpg" alt=".." class="img-responsive"></a>
+                        <a href="#"><img src="images/data/04.jpg" alt=".." class="img-responsive"></a>
+                        <a href="#"><img src="images/data/02.jpg" alt=".." class="img-responsive"></a>
+                        <a href="#"><img src="images/data/03.jpg" alt=".." class="img-responsive"></a>
+                        <a href="#"><img src="images/data/04.jpg" alt=".." class="img-responsive"></a>
+                        <a href="#"><img src="images/data/02.jpg" alt=".." class="img-responsive"></a>
+                        <a href="#"><img src="images/data/03.jpg" alt=".." class="img-responsive"></a>
+                        <a href="#"><img src="images/data/04.jpg" alt=".." class="img-responsive"></a>
+                        <a href="#"><img src="images/data/02.jpg" alt=".." class="img-responsive"></a>
+                        <a href="#"><img src="images/data/03.jpg" alt=".." class="img-responsive"></a>
+                        <a href="#"><img src="images/data/04.jpg" alt=".." class="img-responsive"></a>
+                    </div><!--End Logo Provider-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!--end #provider-->
+<div id="category">
+    <div class="container">
+        <div class="row">
+            <div class="category category-1">
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="menu-category">
+                            <div class="name-category">
+                                <div class="name-category-show">
+                                    <h2 class="title"><a href="#">Máy lọc nước</a></h2>
+                                    <div class="img-thumb-category">
+                                        <a href="#"><img src="images/icons/icon-category-7.png" alt="Máy lọc nước"></a>
+                                    </div>
+                                </div>
+                                <div class="mask"></div>
+                            </div><!--End Name Category-->
+
+                            <div class="provider-logo">
+                                <a href="#"><img src="images/data/201106110609_logo.jpg" alt="Tên nhà cung cấp"></a>
+                                <a href="#"><img src="images/data/geyser.jpg" alt="Tên nhà cung cấp"></a>
+                                <a href="#"><img src="images/data/logo-selecto.jpg" alt="Tên nhà cung cấp"></a>
+                            </div><!--End Provider Logo-->
+
+                            <div class="list">
+                                <ul>
+                                    <li><a href="#">Máy lọc nước Việt Nam</a></li>
+                                    <li><a href="#">Máy lọc nước Geyser</a></li>
+                                    <li><a href="#">Máy lọc nước Hàn Quốc</a></li>
+                                    <li><a href="#">Máy lọc nước USA</a></li>
+                                    <li><a href="#">Máy lọc nước LB Nga</a></li>
+                                    <li><a href="#">Máy lọc nước nóng lạnh</a></li>
+                                    <li><a href="#">Máy lọc nước RO Haohsing</a></li>
+                                    <li><a href="#">Máy lọc nước RO Hàn Quốc</a></li>
+                                </ul>
+                            </div><!--End List-->
+                        </div><!--End Menu Category-->
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="sell-images">
+                            <a href="#"><img src="images/data/category-7-may-loc-nuoc.jpg" alt="Tên sản phẩm" class="img-responsive"></a>
+                        </div><!--End Sell Images-->
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="top-product">
+                            <div class="top-product-item">
+                                <h3 class="top-product-name"><a href="#">Máy lọc nước Nanosky</a></h3>
+                                <span class="top-product-description">Thích hợp mọi không gian bếp</span>
+                                <div class="top-product-image"><a href="#"><img src="images/data/nano-sky.jpg" alt="Tên chuyên mục"></a></div>
+                            </div><!--End Top Product Item-->
+                            <div class="top-product-item">
+                                <h3 class="top-product-name"><a href="#">Máy lọc nước Waterpia</a></h3>
+                                <span class="top-product-description">Thiết kế sang trọng hiện đại</span>
+                                <div class="top-product-image"><a href="#"><img src="images/data/waterpia-gold.jpg" alt="Tên chuyên mục"></a></div>
+                            </div><!--End Top Product Item-->
+                            <div class="top-product-item">
+                                <h3 class="top-product-name"><a href="#">Máy lọc nước Geyser  EW7000</a></h3>
+                                <span class="top-product-description">Nhập khẩu từ LB Nga</span>
+                                <div class="top-product-image"><a href="#"><img src="images/data/nano-geyser-ewater-ew7000.jpg" alt="Tên chuyên mục"></a></div>
+                            </div><!--End Top Product Item-->
+                            <div class="top-product-item">
+                                <h3 class="top-product-name"><a href="#">Máy lọc nước Haohsing</a></h3>
+                                <span class="top-product-description">Cho nguồn nước tinh khiết </span>
+                                <div class="top-product-image"><a href="#"><img src="images/data/haohsing.jpg" alt="Tên chuyên mục"></a></div>
+                            </div><!--End Top Product Item-->
+                        </div><!--End Top Product-->
+                    </div>
+                </div>
+            </div>
+            <div class="category category-2">
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="menu-category">
+                            <div class="name-category">
+                                <div class="name-category-show">
+                                    <h2 class="title"><a href="#">Máy lọc nước</a></h2>
+                                    <div class="img-thumb-category">
+                                        <a href="#"><img src="images/icons/icon-category-7.png" alt="Máy lọc nước"></a>
+                                    </div>
+                                </div>
+                                <div class="mask"></div>
+                            </div><!--End Name Category-->
+
+                            <div class="provider-logo">
+                                <a href="#"><img src="images/data/201106110609_logo.jpg" alt="Tên nhà cung cấp"></a>
+                                <a href="#"><img src="images/data/geyser.jpg" alt="Tên nhà cung cấp"></a>
+                                <a href="#"><img src="images/data/logo-selecto.jpg" alt="Tên nhà cung cấp"></a>
+                            </div><!--End Provider Logo-->
+
+                            <div class="list">
+                                <ul>
+                                    <li><a href="#">Máy lọc nước Việt Nam</a></li>
+                                    <li><a href="#">Máy lọc nước Geyser</a></li>
+                                    <li><a href="#">Máy lọc nước Hàn Quốc</a></li>
+                                    <li><a href="#">Máy lọc nước USA</a></li>
+                                    <li><a href="#">Máy lọc nước LB Nga</a></li>
+                                    <li><a href="#">Máy lọc nước nóng lạnh</a></li>
+                                    <li><a href="#">Máy lọc nước RO Haohsing</a></li>
+                                    <li><a href="#">Máy lọc nước RO Hàn Quốc</a></li>
+                                </ul>
+                            </div><!--End List-->
+                        </div><!--End Menu Category-->
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="sell-images">
+                            <a href="#"><img src="images/data/category-7-may-loc-nuoc.jpg" alt="Tên sản phẩm" class="img-responsive"></a>
+                        </div><!--End Sell Images-->
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="top-product">
+                            <div class="top-product-item">
+                                <h3 class="top-product-name"><a href="#">Máy lọc nước Nanosky</a></h3>
+                                <span class="top-product-description">Thích hợp mọi không gian bếp</span>
+                                <div class="top-product-image"><a href="#"><img src="images/data/nano-sky.jpg" alt="Tên chuyên mục"></a></div>
+                            </div><!--End Top Product Item-->
+                            <div class="top-product-item">
+                                <h3 class="top-product-name"><a href="#">Máy lọc nước Waterpia</a></h3>
+                                <span class="top-product-description">Thiết kế sang trọng hiện đại</span>
+                                <div class="top-product-image"><a href="#"><img src="images/data/waterpia-gold.jpg" alt="Tên chuyên mục"></a></div>
+                            </div><!--End Top Product Item-->
+                            <div class="top-product-item">
+                                <h3 class="top-product-name"><a href="#">Máy lọc nước Geyser  EW7000</a></h3>
+                                <span class="top-product-description">Nhập khẩu từ LB Nga</span>
+                                <div class="top-product-image"><a href="#"><img src="images/data/nano-geyser-ewater-ew7000.jpg" alt="Tên chuyên mục"></a></div>
+                            </div><!--End Top Product Item-->
+                            <div class="top-product-item">
+                                <h3 class="top-product-name"><a href="#">Máy lọc nước Haohsing</a></h3>
+                                <span class="top-product-description">Cho nguồn nước tinh khiết </span>
+                                <div class="top-product-image"><a href="#"><img src="images/data/haohsing.jpg" alt="Tên chuyên mục"></a></div>
+                            </div><!--End Top Product Item-->
+                        </div><!--End Top Product-->
+                    </div>
+                </div>
+            </div>
+            <div class="category category-3">
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="menu-category">
+                            <div class="name-category">
+                                <div class="name-category-show">
+                                    <h2 class="title"><a href="#">Máy lọc nước</a></h2>
+                                    <div class="img-thumb-category">
+                                        <a href="#"><img src="images/icons/icon-category-7.png" alt="Máy lọc nước"></a>
+                                    </div>
+                                </div>
+                                <div class="mask"></div>
+                            </div><!--End Name Category-->
+
+                            <div class="provider-logo">
+                                <a href="#"><img src="images/data/201106110609_logo.jpg" alt="Tên nhà cung cấp"></a>
+                                <a href="#"><img src="images/data/geyser.jpg" alt="Tên nhà cung cấp"></a>
+                                <a href="#"><img src="images/data/logo-selecto.jpg" alt="Tên nhà cung cấp"></a>
+                            </div><!--End Provider Logo-->
+
+                            <div class="list">
+                                <ul>
+                                    <li><a href="#">Máy lọc nước Việt Nam</a></li>
+                                    <li><a href="#">Máy lọc nước Geyser</a></li>
+                                    <li><a href="#">Máy lọc nước Hàn Quốc</a></li>
+                                    <li><a href="#">Máy lọc nước USA</a></li>
+                                    <li><a href="#">Máy lọc nước LB Nga</a></li>
+                                    <li><a href="#">Máy lọc nước nóng lạnh</a></li>
+                                    <li><a href="#">Máy lọc nước RO Haohsing</a></li>
+                                    <li><a href="#">Máy lọc nước RO Hàn Quốc</a></li>
+                                </ul>
+                            </div><!--End List-->
+                        </div><!--End Menu Category-->
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="sell-images">
+                            <a href="#"><img src="images/data/category-7-may-loc-nuoc.jpg" alt="Tên sản phẩm" class="img-responsive"></a>
+                        </div><!--End Sell Images-->
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="top-product">
+                            <div class="top-product-item">
+                                <h3 class="top-product-name"><a href="#">Máy lọc nước Nanosky</a></h3>
+                                <span class="top-product-description">Thích hợp mọi không gian bếp</span>
+                                <div class="top-product-image"><a href="#"><img src="images/data/nano-sky.jpg" alt="Tên chuyên mục"></a></div>
+                            </div><!--End Top Product Item-->
+                            <div class="top-product-item">
+                                <h3 class="top-product-name"><a href="#">Máy lọc nước Waterpia</a></h3>
+                                <span class="top-product-description">Thiết kế sang trọng hiện đại</span>
+                                <div class="top-product-image"><a href="#"><img src="images/data/waterpia-gold.jpg" alt="Tên chuyên mục"></a></div>
+                            </div><!--End Top Product Item-->
+                            <div class="top-product-item">
+                                <h3 class="top-product-name"><a href="#">Máy lọc nước Geyser  EW7000</a></h3>
+                                <span class="top-product-description">Nhập khẩu từ LB Nga</span>
+                                <div class="top-product-image"><a href="#"><img src="images/data/nano-geyser-ewater-ew7000.jpg" alt="Tên chuyên mục"></a></div>
+                            </div><!--End Top Product Item-->
+                            <div class="top-product-item">
+                                <h3 class="top-product-name"><a href="#">Máy lọc nước Haohsing</a></h3>
+                                <span class="top-product-description">Cho nguồn nước tinh khiết </span>
+                                <div class="top-product-image"><a href="#"><img src="images/data/haohsing.jpg" alt="Tên chuyên mục"></a></div>
+                            </div><!--End Top Product Item-->
+                        </div><!--End Top Product-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div><!--End category-->
+</section>
+<footer>
+    <div class="container">
+        <div class="row" footer-module>
+            <div id="footer-module">
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="footer-mod-1">
+                            <h4>Thông tin</h4>
+                            <div class="footer-mod-1-content">
+                                <ul>
+                                    <li><a href="#">Dành cho nhóm mua</a></li>
+                                    <li><a href="#">Dành cho nhà cung cấp</a></li>
+                                    <li><a href="#">Về vuabanle.vn</a></li>
+                                    <li><a href="#">Tuyển dụng</a></li>
+                                    <li><a href="#">Tin tức</a></li>
+                                    <li><a href="#">Tin khuyến mại</a></li>
+                                    <li><a href="#">Cam kết thông tin</a></li>
+                                    <li><a href="#">Khiếu nại</a></li>
+                                </ul>
+                            </div>
+                        </div><!--End Footer Mod 1-->
+
+                        <div class="footer-mod-1">
+                            <h4>Hỗ trợ khách hàng</h4>
+                            <div class="footer-mod-1-content">
+                                <ul>
+                                    <li><a href="#">Liên hệ</a></li>
+                                    <li><a href="#">Phương thức thanh toán</a></li>
+                                    <li><a href="#">Hướng dẫn mua hàng</a></li>
+                                    <li><a href="#">Chính sách đổi trả hàng</a></li>
+                                    <li><a href="#">Trung tâm bảo hành</a></li>
+                                    <li><a href="#">Báo phí vận chuyển</a></li>
+                                    <li><a href="#">Chính sách bảo hành</a></li>
+                                </ul>
+                            </div>
+                        </div><!--End Footer Mod 1-->
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="footer-mod-2">
+                            <h4>Chăm sóc khách hàng</h4>
+                            <div class="footer-mod-2-content">
+                                <div class="support-item">
+                                    <img src="images/data/1.jpg" width="57" height="57" alt="Nhân viên hỗ trợ 1">
+                                    <span class="support-name">Nguyễn Thu</span><br>
+                                    <span class="support-phone">04 6269 1411</span>
+                                </div><!--Support Item-->
+
+                                <div class="support-item">
+                                    <img src="images/data/2.jpg" width="57" height="57" alt="Nhân viên hỗ trợ 1">
+                                    <span class="support-name">Hoàng Lan</span><br>
+                                    <span class="support-phone">04 6269 1444</span>
+                                </div><!--Support Item-->
+
+                                <div class="support-item">
+                                    <img src="images/data/3.jpg" width="57" height="57" alt="Nhân viên hỗ trợ 1">
+                                    <span class="support-name">Hoàng Tạo</span><br>
+                                    <span class="support-phone">0987 355 209</span>
+                                </div><!--Support Item-->
+
+                                <div class="support-item">
+                                    <img src="images/data/4.jpg" width="57" height="57" alt="Nhân viên hỗ trợ 1">
+                                    <span class="support-name">Hà Kiên</span><br>
+                                    <span class="support-phone">0946 435 292</span>
+                                </div><!--Support Item-->
+
+                                <a href="#" class="spres-regester" target="_blank"> <img src="images/chungnhan.jpg" title="" alt=""></a>
+
+                            </div>
+                        </div><!--End Footer Mod 1-->
+
+
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="footer-mod-2">
+                            <h4>Đăng ký nhận tin khuyến mãi</h4>
+                            <div class="footer-mod-2-content">
+                                <table>
+                                    <tr>
+                                        <td><input type="text" placeholder="Nhập Email của bạn để đăng ký" value class="email-text"></td>
+                                        <td><input type="button" value="Đăng ký" class="register-button"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div><!--End Footer Mod 2-->
+                        <div class="footer-mod-2">
+                            <h4>Hỗ trợ thanh toán</h4>
+                            <div class="footer-mod-2-content">
+                                <img src="images/icons/card.jpg" alt="card">
+                                <img src="images/icons/AGRIBANK.jpg" alt="AGRIBANK">
+                                <img src="images/icons/BIDV.jpg" alt="BIDV">
+                                <img src="images/icons/MARITIME.jpg" alt="MARITIME">
+                                <img src="images/icons/TECHCOM.jpg" alt="TECHCOM">
+                                <img src="images/icons/VIETCOMBANK.jpg" alt="VIETCOMBANK">
+                                <img src="images/icons/Vietinbank.jpg" alt="Vietinbank">
+
+                            </div>
+                        </div><!--End Footer Mod 2-->
+
+                        <div class="footer-mod-2">
+                            <h4></h4>
+                            <div class="footer-mod-2-content">
+                                <div class="share-icon">
+                                    <a href="#" ta="" class="twitter" target="_blank"></a><span> Twitter</span>
+                                    <a href="#" class="facebook" target="_blank"></a><span>Facebook </span>
+                                    <a href="#" class="google" target="_blank"></a><span>Google</span>
+                                </div>
+                            </div>
+                        </div><!--End Footer Mod 2-->
+                    </div>
+                </div>
+            </div>
+            <div id="copy-right">
+                <span>
+            <b>ĐƯỢC VẬN HÀNH BỜI SMART VIỆT JSC</b><br>
+            Địa chỉ: Số 75 Trung Kính, Trung Hòa, Cầu Giấy, Hà Nội, Thành lập ngày 07 tháng 09 năm 2011, Mã số doanh nghiệp: 0105486972<br>
+            Điện thoại: (04) 6329 7119 | Fax: (04) 6329 7119 | Email: info@vuabanle.vn
+        </span>
+            </div><!--End Copy Right-->
+        </div>
+    </div>
+</footer>
+</body>
+</html>
